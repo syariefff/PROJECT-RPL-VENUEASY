@@ -44,8 +44,12 @@ const Navbar: React.FC = () => {
 
           {/* Tombol di Kanan */}
           <div className="flex items-center gap-4">
+            <Link href={"/signup"}>
             <button className="bg-transparent text-white border border-white px-4 py-2 rounded transition duration-300 hover:bg-[#f44848]">SIGN UP</button>
+            </Link>
+            <Link href={"/login"}>
             <button className="bg-[#b30d0d] text-white px-4 py-2 rounded transition duration-300 hover:bg-[#9d0a0a]">LOGIN</button>
+            </Link>
           </div>
         </header>
       </main>

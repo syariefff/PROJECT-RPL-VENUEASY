@@ -25,37 +25,37 @@ return (
         <div className="flex items-center justify-between bg-gray-100 rounded-lg shadow-lg p-2 max-w-4xl mx-auto mt-20">
       {/* Icon dan Judul */}
       <div className="flex items-center space-x-2">
-        <Image src={Building} alt="building" width={25} height={25} text-gray-500></Image>
+        <Image src={Building} alt="building" width={25} height={25}></Image>
         <h2 className="font-semibold text-black">Venue Search</h2>
       </div>
 
       {/* Input pencarian nama venue */}
       <div className="flex items-center space-x-2 border-l border-gray-300 pl-4">
-        <Image src={Search} alt="searching" width={20} height={20} text-gray-500></Image>
+        <Image src={Search} alt="searching" width={20} height={20} className="text-gray-500"></Image>
         <input
           type="text"
           placeholder="Search Name Venue"
-          className="bg-gray-100 outline-none"
+          className="bg-gray-100 outline-none text-black"
         />
       </div>
 
       {/* Input lokasi event */}
       <div className="flex items-center space-x-2 border-l border-gray-300 pl-4">
-        <Image src={Location} alt="location" width={20} height={20} text-gray-500></Image>
+        <Image src={Location} alt="location" width={20} height={20} className="text-gray-500"></Image>
         <input
           type="text"
           placeholder="Event Location"
-          className="bg-gray-100 outline-none"
+          className="bg-gray-100 outline-none text-black"
         />
       </div>
 
       {/* Input jumlah tamu */}
       <div className="flex items-center space-x-2 border-l border-gray-300 pl-4">
-        <Image src={Person} alt="person" width={25} height={25} text-gray-500></Image>
+        <Image src={Person} alt="person" width={25} height={25} className="text-gray-500"></Image>
         <input
           type="text"
           placeholder="Number Of Guest"
-          className="bg-gray-100 outline-none"
+          className="bg-gray-100 outline-none text-black"
         />
       </div>
 
