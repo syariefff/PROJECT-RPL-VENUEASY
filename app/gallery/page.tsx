@@ -1,22 +1,21 @@
 import React from 'react'
 import Image from 'next/image';
 import Hero from "@/image/bg.png";
-import BG from "@/image/image 11.png"
+import BG from "@/image/bggallery.png"
 
 const GALLERY = () => {
   return (
-    <div className='w full'>
-
+  <div className='relative w-full h-fit bg-black opacity-90'>
         <Image src ={BG}
         alt = "Hero"
         width={1360}
         height={900}
         className="w-full h-full object-cover bg-black"/>
-       <div className="min-h-screen bg-black py-10 px-6 ">
-      <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="justify-center items-center min-h-screen bg-black py-10 px-6 ">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Card Jakarta */}
-          <div className="relative rounded-lg overflow-hidden shadow-lg mt-10">
+            <div className="relative rounded-lg overflow-hidden shadow-lg mt-10">
             <Image
               src={Hero} // Ganti dengan path gambar Jakarta
               alt="Jakarta"
@@ -77,7 +76,7 @@ const GALLERY = () => {
         </div>
       </div>
     </div>
-    </div>
+  </div>
 );
 }
 
