@@ -3,8 +3,15 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "@/image/logo.png";
+import { usePathname } from "next/navigation"; 
 
 const Navbar: React.FC = () => {
+  
+  const pathname = usePathname();
+  if (pathname=== "/login" || pathname === "/register") {
+    return null;
+  }
+
   return (
     <div className="fixed w-full h-16 z-10">
       <main className="bg-transparent">
